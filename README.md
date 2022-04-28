@@ -1,3 +1,12 @@
+local DoctorShiba = Instance.new("ScreenGui")
+
+        DoctorShiba.Name = "Zerex HUB"
+
+        DoctorShiba.Parent = game.CoreGui
+
+        DoctorShiba.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+
 game:GetService("Players").LocalPlayer.Idled:connect(function()
         game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
         wait(1)
@@ -16,7 +25,7 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
     Toggle.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
     Toggle.Size = UDim2.new(0, 50, 0, 50)
     Toggle.Font = Enum.Font.Code
-    Toggle.Text = "Z" -- Name
+    Toggle.Text = "Zerex HUB" -- Name
     Toggle.TextColor3 = Color3.fromRGB(180, 210, 228) -- Color
     Toggle.TextScaled = true
     Toggle.MouseButton1Down:connect(function()
